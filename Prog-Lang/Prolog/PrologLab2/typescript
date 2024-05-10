@@ -1,0 +1,27 @@
+Script started on 2024-04-05 15:51:56-04:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="80" LINES="41"]
+]0;rosado44@elvix2:~/Prog-Lang/Prolog/PrologLab2[?2004h[rosado44@elvis PrologLab2]$ swipl
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult([12G'nums[17G'[12G[18G[18G)[11G[19G .
+[1mtrue.[0m
+
+?- ?- consult('nums').[16G').[K[15G').[K[14G').[K[13G').[K[13Gp').[14Gr').[15Go').[16Gl').[17Go').[18Gg').[19Gl').[20Ga').[21G2').[21G').[K[21Gb').[22G2').[23Gt').[24Ge').[25Gs').[26Gt').
+[1mtrue.[0m
+
+?- testall .
+[1mtrue [0m[1;31m
+ERROR: Type error: `character_code' expected, found `-1' (an integer)
+ERROR: In:
+ERROR:   [11] [34mchar_code(_102,-1)[0m[0m[1;31m
+ERROR:   [10] [34m'$in_reply'(-1,'?h')[0m[0m[1;31m at /usr/lib64/swipl-9.0.4/boot/init.pl:1037
+[0m?- ^D
+[32m% halt
+[0m]0;rosado44@elvix2:~/Prog-Lang/Prolog/PrologLab2[?2004h[rosado44@elvis PrologLab2]$ exit
+[?2004lexit
+
+Script done on 2024-04-05 15:52:28-04:00 [COMMAND_EXIT_CODE="0"]

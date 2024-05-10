@@ -1,0 +1,27 @@
+% Facts
+% Define spouse relationships
+spouse(john, mary).
+spouse(mike, lisa).
+
+% Define parent relationships
+parent(john, sam).
+parent(john, emily).
+parent(mike, jason).
+parent(lisa, sam).
+parent(lisa, emily).
+parent(lisa, jason).
+
+% Rules
+% Define sibling relationship
+sibling(X, Y) :- parent(P, X), parent(P, Y), X \== Y.
+
+% Define grandparent relationship
+grandparent(X, Z) :- parent(X, Y), parent(Y, Z).
+
+% Queries
+% Example queries to test the relationships
+% ?- parent(john, emily).
+% ?- parent(mike, X).
+% ?- sibling(sam, emily).
+% ?- grandparent(john, jason).
+

@@ -1,0 +1,29 @@
+Script started on 2024-04-20 16:54:38-04:00 [TERM="xterm" TTY="/dev/pts/7" COLUMNS="184" LINES="42"]
+]0;rosado44@elvix2:~/Prog-Lang/Prolog/PrologHW[?2004h[rosado44@elvis PrologHW]$ swipl
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ?- alt.?- test4(L).[8G3(L).[8G2(L).[8G1(L).?- [best_candidates].
+[1mtrue.[0m
+
+?- ?- [best_candidates].?- alt.[K?- test4(L).[8G3(L).[8G2(L).[8G1(L).
+L = [adams, ford].
+
+?- ?- test1(L).?- [best_candidates].?- alt.[K?- test4(L).[8G3(L).[8G2(L).
+L = [wilson].
+
+?- ?- test2(L).[8G1(L).?- [best_candidates].?- alt.[K?- test4(L).[8G3(L).
+L = [wilson].
+
+?- ?- test3(L).[8G2(L).[8G1(L).?- [best_candidates].?- alt.[K?- test4(L).
+L = [harding, buchanan, fillmore].
+
+?- halt.
+]0;rosado44@elvix2:~/Prog-Lang/Prolog/PrologHW[?2004h[rosado44@elvis PrologHW]$ exit
+[?2004lexit
+
+Script done on 2024-04-20 16:55:02-04:00 [COMMAND_EXIT_CODE="0"]

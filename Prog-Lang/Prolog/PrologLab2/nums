@@ -1,0 +1,10 @@
+% Problem 1: Classify numbers as small, medium, or big
+classify(N, small) :- N < 50.                           % If N is less than 50, classify as small
+classify(N, medium) :- N >= 50, N =< 100.               % If N is between 50 and 100 (inclusive), classify as medium
+classify(N, big) :- N > 100.                            % If N is greater than 100, classify as big
+
+% Problem 2: Check if a list contains a big number
+contains_big([]) :- fail.                               % Base case: an empty list does not contain a big number
+contains_big([H|_]) :- classify(H, big), !.             % If the head of the list is big, succeed
+contains_big([_|T]) :- contains_big(T).                 % Otherwise, check the rest of the list
+

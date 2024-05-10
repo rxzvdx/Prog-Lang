@@ -1,0 +1,79 @@
+V "GNAT Lib v13"
+M P W=b
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U exceptions%b		exceptions.adb		b958974d NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.atomic_operations.test_and_set%s  s-aotase.adb  s-aotase.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20231205000000 76789da1 ada%s
+D a-except.ads		20231205000000 2a7d8d70 ada.exceptions%s
+D a-ioexce.ads		20231205000000 40018c65 ada.io_exceptions%s
+D a-stream.ads		20231205000000 119b8fb3 ada.streams%s
+D a-string.ads		20231205000000 90ac6797 ada.strings%s
+D a-sttebu.ads		20231205000000 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20231205000000 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20231205000000 9eaa38c6 ada.tags%s
+D a-textio.ads		20231205000000 5c2c6153 ada.text_io%s
+D a-unccon.ads		20231205000000 0e9b276f ada.unchecked_conversion%s
+D exceptions.adb	20240419150442 cf097b6e exceptions%b
+D interfac.ads		20231205000000 15f799c2 interfaces%s
+D i-c.ads		20231205000000 5c5a6c17 interfaces.c%s
+D i-cstrea.ads		20231205000000 e53d8b8e interfaces.c_streams%s
+D system.ads		20231205000000 426dafb8 system%s
+D s-atoope.ads		20231205000000 c7637a25 system.atomic_operations%s
+D s-aotase.ads		20231205000000 90cf94ab system.atomic_operations.test_and_set%s
+D s-aotase.adb		20231205000000 e581b407 system.atomic_operations.test_and_set%b
+D s-atopri.ads		20231205000000 1b132436 system.atomic_primitives%s
+D s-conca3.ads		20231205000000 8a7a19a2 system.concat_3%s
+D s-crtl.ads		20231205000000 8a0692f8 system.crtl%s
+D s-exctab.ads		20231205000000 91bef6ef system.exception_table%s
+D s-ficobl.ads		20231205000000 dc5161d4 system.file_control_block%s
+D s-parame.ads		20231205000000 d494a4a6 system.parameters%s
+D s-putima.ads		20231205000000 17291fe4 system.put_images%s
+D s-secsta.ads		20231205000000 578279f5 system.secondary_stack%s
+D s-soflin.ads		20231205000000 df77073e system.soft_links%s
+D s-stache.ads		20231205000000 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20231205000000 1c9580f6 system.standard_library%s
+D s-stoele.ads		20231205000000 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20231205000000 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20231205000000 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20231205000000 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20231205000000 d9032363 system.wch_con%s
+G a e
+G c Z b b [exceptions standard 3 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r23 2r6 2r26
+X 2 a-except.ads
+44K13*Exceptions 295e19 11|2w10 2r30
+62V13*Exception_Name{string} 11|19s47 27s42
+X 9 a-textio.ads
+58K13*Text_IO 787e16 11|1w10 1r27
+566U14*Put_Line 11|16s25 19s25 25s17 27s20
+X 11 exceptions.adb
+3U11*Exceptions 3b11 29l5 29t15
+4X9 E 8r23 15r22
+6U19 Q 6b19 9l13 9t14 13s17
+11U19 P 11b19 20l13 20t14 22s9
+18r22 X{2|53R9} 19r63
+26r14 X{2|53R9} 27r58
+

@@ -1,0 +1,38 @@
+Select any three of the following, and write a paragraph (roughly 3-5 sentences) in response to each, based on your experience of learning 
+and using Ruby, Lua, or Perl this semester.
+You may work in a team on the programs, but each team member should submit their own individual answers to the questions.
+
+1. Fun stuff: Tell me about a feature of the scripting language you chose that was fun and interesting to use, or that made it easy to solve the 
+programming problem.
+
+Perl's dynamic nature significantly simplifies handling user input, and in the context of the best candidates program, that made Perl super fun. 
+Being a dynamic language, Perl does not require variables to be declared with a specific data type beforehand, which allows it to easily adapt 
+to different types of input at runtime. This flexibility is particularly useful when working with user-generated data, which can vary widely in 
+format and structure. Perl's built-in functions like `chomp` to remove newline characters, and regex capabilities for pattern matching, make it 
+straightforward to process and validate user input effectively. The ability to quickly script these operations without rigid type constraints 
+or verbose error handling enhances productivity and saved me a TON of time.
+
+2. Unusual stuff: Tell me about a feature of the language that was unusual or that you found really interesting. What about it caught your 
+attention?
+
+A feature of Perl that stands out is its context sensitivity, where the behavior of certain operations depends on the context in which 
+they are used. For example, operators and functions behave differently when used in a scalar context versus a list context. This can 
+lead to expressive code, as a single function can return different types of data based on its surrounding code. This context 
+sensitivity is unusual because it requires the programmer to have a clear understanding of the context to predict accurately how a 
+piece of code will behave. It's a double-edged sword that offers flexibility but can also introduce bugs if not managed carefully. 
+This aspect really ticked me off when I was learning Perl as I had never really seen it before.
+
+3. Comparison with Python (if you've used Python before): The scripting language you learned this semester (Ruby, Lua, or Perl) is 
+probably similar in many ways to Python. Describe two or three ways in which the scripting language you learned this semester is 
+different from Python. Do you think those differences are an improvement or a drawback, as compared to similar features in Python?
+
+Comparing Perl to Python, several differences stand out. First, Perl's syntax is far more permissive than Python's, which strictly 
+enforces indentation and has a more uniform syntax (the indentation is ANNOYING for first time Python programmers). Perl's 
+flexibility with syntax can lead to more compact code but can also result in less readable code if not written carefully. 
+Second, Perl's context sensitivity, as mentioned, contrasts with Python's more straightforward approach where functions and 
+operators have consistent behavior. Lastly, Perl's extensive use of special variables (like `$_`, `$@`, etc.) can make scripts 
+concise, but they often come at the cost of clarity for those not familiar with them. While these features can be seen as 
+strengths in terms of flexibility and power, they might also be viewed as drawbacks concerning readability and maintainability, 
+especially in larger codebases.
+
+

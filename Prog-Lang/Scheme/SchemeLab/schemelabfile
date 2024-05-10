@@ -1,0 +1,10 @@
+; Antonio Rosado
+(define (classify N)
+	(cond ((> N 100) 'big)
+	((and (>= N 50) (<= N 100)) 'medium)
+	(else 'small)))
+
+(define (contains_big L)
+	(cond ((null? L) #f)
+	((eq? (classify (car L)) 'big) #t)
+	(else (contains_big (cdr L)))))

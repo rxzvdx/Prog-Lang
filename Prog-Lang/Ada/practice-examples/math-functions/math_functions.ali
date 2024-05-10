@@ -1,0 +1,27 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+
+U math_functions%b	math_functions.adb	a66c8751 NE OO PK
+
+U math_functions%s	math_functions.ads	c1a1f8ef EE NE OO PK
+
+D math_functions.ads	20240419143453 c1a1f8ef math_functions%s
+D math_functions.adb	20240419143825 67cd7fbe math_functions%b
+D system.ads		20231205000000 426dafb8 system%s
+G a e
+G c Z s b [sqrt math_functions 4 18 none]
+G c Z s b [exp math_functions 5 18 none]
+X 1 math_functions.ads
+3K9*Math_Functions 6l5 6e19 2|2b14 20l5 20t19
+4V18*Sqrt{float} 4>23 2|5b18 12l13 12t17
+4f23 X{float} 2|5b24 6r35 8r46 9r42
+5V18*Exp{float} 5>23 5>37 2|14b18 18l13 18t16
+5f23 Base{float} 2|14b23
+5f37 Exponent{float} 2|14b37
+X 2 math_functions.adb
+3N9 Epsilon 8r51
+6f17 Result{float} 8r28 8r37 9m25 9r46 9r55 11r24
+

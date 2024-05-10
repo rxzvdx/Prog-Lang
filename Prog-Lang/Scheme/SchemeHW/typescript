@@ -1,0 +1,25 @@
+Script started on 2024-02-26 19:15:35-05:00 [TERM="xterm" TTY="/dev/pts/187" COLUMNS="80" LINES="41"]
+]0;rosado44@elvix2:~/Prog-Lang/Scheme/SchemeHW[?2004h[rosado44@elvis SchemeHW]$ scheme48
+[?2004lWelcome to Scheme 48 1.9.2 (made by root on 2016-08-30)
+See http://s48.org/ for more information.
+Please report bugs to scheme-48-bugs@s48.org.
+Get more information at http://www.s48.org/.
+Type ,? (comma question-mark) for help.
+> ,load schemeHW.scm
+Test 1: 
+Test 2: 
+Test 3: 
+Test 4: 
+> (test1)
+(ford adams)
+> (test2)
+(wilson)
+> (test3)
+(wilson)
+> (test4)
+(fillmore buchanan harding)
+> ,exit
+]0;rosado44@elvix2:~/Prog-Lang/Scheme/SchemeHW[?2004h[rosado44@elvis SchemeHW]$ exit
+[?2004lexit
+
+Script done on 2024-02-26 19:16:09-05:00 [COMMAND_EXIT_CODE="0"]

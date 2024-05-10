@@ -1,0 +1,20 @@
+test1(Classification) :- classify(22, Classification).	% should be small
+test2(Classification) :- classify(63, Classification).	% should be medium
+test3(Classification) :- classify(900, Classification).	% should be big
+test4(Classification) :- classify(50, Classification).	% should be medium
+test5(Classification) :- classify(100, Classification).	% should be medium
+
+test6 :- contains_big([48, 102, 7]).		% should succeed
+test7 :- contains_big([-4, 10]).  		% should fail
+test8 :- contains_big([444, 333, 222, 111]).	% should succeed
+
+testall :-
+	test1(small),
+	test2(medium),
+	test3(big),
+	test4(medium),
+	test5(medium),
+	test6,
+	\+ test7,
+	test8.
+

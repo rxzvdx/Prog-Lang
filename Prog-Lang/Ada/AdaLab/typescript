@@ -1,0 +1,41 @@
+Script started on 2024-03-18 17:09:45-04:00 [TERM="xterm" TTY="/dev/pts/36" COLUMNS="80" LINES="41"]
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ gnatmake number)[K_score
+[?2004lgnatmake: "number_score" up to date.
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ gnatmake number_score[K[K[K[K[K[K[K[K[K[K[K[Kharmomo[K[Knic
+[?2004lgcc -c harmonic.adb
+gnatbind -x harmonic.ali
+gnatlink harmonic.ali
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ gnatmake harmonicnumber_scoreexit[K./harmonic_seriesgnatmake harmonic_series[10P./number_scoregnatmake harmonic_series[10P./number_score
+[?2004lEnter an integer: 501
+The score for  501 is:  11
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./number_score
+[?2004lEnter an integer: -12
+The score for -12 is:  7
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./number_score
+[?2004lEnter an integer: 600
+The score for  600 is:  15
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./number_score
+[?2004lEnter an integer: 7
+The score for  7 is:  1
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./number_score
+[?2004lEnter an integer: -9
+The score for -9 is:  3
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./number_score[K[K[K[K[K[K[K[K[K[K[K[Kharmonic
+[?2004lEnter a positive integer N: 3' 
+The sum of the first 3 terms of the alternating harmonic series is: 0.83333
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./harmonic
+[?2004lEnter a positive integer N: 100
+The sum of the first 100 terms of the alternating harmonic series is: 0.68817
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./harmonic
+[?2004lEnter a positive integer N: 0
+Error: N must be a positive integer.
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./harmonic
+[?2004lEnter a positive integer N: -15
+Error: N must be a positive integer.
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ ./harmonic
+[?2004lEnter a positive integer N: 5005
+The sum of the first 5005 terms of the alternating harmonic series is: 0.69324
+]0;rosado44@elvix2:~/Ada/AdaLab[?2004h[rosado44@elvis AdaLab]$ exit
+[?2004lexit
+
+Script done on 2024-03-18 17:10:50-04:00 [COMMAND_EXIT_CODE="0"]

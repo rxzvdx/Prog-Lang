@@ -1,0 +1,28 @@
+(define (num_pos L)
+	; Return the number of positive numbers in list L
+	(cond	((null? L)	0)
+		((> (car L) 0)
+			(+ 1 (num_pos (cdr L))))
+		(else
+			(num_pos (cdr L))) ))
+
+;(define (list_pos L)
+	; Return a list of the positive numbers in list L
+
+;(define (occurs Item L)
+	; Return the number of occurrences of Item in list L
+
+;(define (all-pos? L)
+	; Return #T if all the numbers in list L are positive; otherwise #F
+
+; (define (has-pos? L)
+	; Return #T if at least one of the numbers in list L is positive;
+	; otherwise #F
+
+;(define (capital State SCList)
+	; Return the capital of State in SCList
+	; SCList is a list of state-capital pairs
+	; (capital 'nj '((nj trenton) (de dover) (va richmond))) should
+	; return trenton
+	; Return 'none if not found
+

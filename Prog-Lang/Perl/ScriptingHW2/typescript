@@ -1,0 +1,11 @@
+Script started on 2024-04-15 21:40:47-04:00 [TERM="xterm" TTY="/dev/pts/136" COLUMNS="184" LINES="42"]
+]0;rosado44@elvix2:~/Prog-Lang/Perl/ScriptingHW2[?2004h[rosado44@elvis ScriptingHW2]$ vim scripting-questions.txtls[Krm scripting-questions.txtls[Kcd ..[3Plscd ScriptingHW2ls[Kcp scripting-questions.txt ScriptingHW2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Krmdir HW2[4Pcd ..[3Plscd ..rmdir HW2ls[Kcp scripting-questions.txt ScriptingHW2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ScriptingHW2ls[Kcd ..[3Plsrm scripting-questions.txtls[Kvim scripting-questions.txt[Kvim scripting-questions.txtls[Krm scripting-questions.txtls[Kcd ..[3Plscd ScriptingHW2ls[Kcp scripting-questions.txt ScriptingHW2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcp scripting-questions.txt ScriptingHW2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ScriptingHW2ls[Kcd ..[3Plsrm scripting-questions.txtls[Kvim scripting-questions.txt[K./best_candidates.pl
+[?2004lEnter 'manual' to run the program manually or 'test' to run the test cases: test
+Test 1: adams ford
+Test 2: wilson
+Test 3: wilson
+Test 4: buchanan harding fillmore
+]0;rosado44@elvix2:~/Prog-Lang/Perl/ScriptingHW2[?2004h[rosado44@elvis ScriptingHW2]$ exit
+[?2004lexit
+
+Script done on 2024-04-15 21:41:14-04:00 [COMMAND_EXIT_CODE="0"]

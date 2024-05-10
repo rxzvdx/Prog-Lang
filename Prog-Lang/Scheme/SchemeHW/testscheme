@@ -1,0 +1,35 @@
+(define (test1) (best_candidates
+	'(          4  3  4  4  2  1  3  3  3  4 )
+	'((adams    3  3  3  3  3  3  3  3  3  3 )
+	  (grant    1  2  1  2  1  2  1  2  1  2 )
+	  (ford     4  4  4  4  4  4  4  4  4  4 )
+	  (hayes    1  2  3  4  1  2  3  4  1  2 )
+	  (taft     2  3  2  3  2  3  2  3  2  3 )
+	  (polk     4  4  4  4  4  2  2  2  2  2 )) ))
+; (adams ford) -- typical case; answer includes first name in list
+
+
+(define (test2) (best_candidates
+	'(          2  2  2  3  4  2  2  2  3  4 )
+	'(( taylor  4  4  4  1  2  3  3  3  1  1 )
+	  ( wilson  1  1  1  2  3  1  1  1  2  4 )
+	  ( monroe  3  3  3  3  3  3  3  3  3  3 )) ))
+; (wilson) -- typical case; answer in middle of list
+
+
+(define (test3) (best_candidates
+	'(          2  2  2  3  4  2  2  2  3  4 )
+	'(( taylor  4  4  4  1  2  3  3  3  1  1 )
+	  ( monroe  3  3  3  3  3  3  3  3  3  3 )
+	  ( wilson  1  1  1  2  3  1  1  1  2  4 )) ))
+; (wilson) -- typical case; answer is last name in list
+
+
+(define (test4) (best_candidates
+	'(            2  2  2  2  2  2  2  2  2  2 )
+	'(( harding   4  4  4  4  4  4  4  4  4  4 )
+	  ( buchanan  3  3  3  3  3  3  3  3  3  3 )
+	  ( fillmore  3  4  3  4  3  4  3  4  3  4 )) ))
+; (harding buchanan fillmore) == 3-way tie for 0
+
+

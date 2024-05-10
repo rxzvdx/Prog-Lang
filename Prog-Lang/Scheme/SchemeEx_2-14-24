@@ -1,0 +1,85 @@
+; Categories
+; list -> num
+; -----------
+; sumlist
+; num_pos
+; occurs
+
+; list -> list
+; ------------
+; add-pairs
+; list_pos
+
+; predicates
+; ----------
+; contains_big
+; all-pos
+; has-pos
+
+; nested lists
+; ------------
+; capital
+
+; case 1 - empty: ()
+; case 2 - car is positive 
+;	glue car onto list of pos in cdr
+; case 3 - car not positive (recursive call)
+;	return list of pos. in cdr
+
+(define (list_pos L)
+	(cond	((null? L)	'()) 		; condition: if list is == null
+						; check if empty
+		((> (car L) 0) ; if list is > 0 
+			(cons (car L) (list_pos (cdr L))))
+		(else 
+			(list_pos (cdr L))) ))
+
+; count num of occurrences in a list
+; case 1 - empty: 0
+; case 2 - matches car :
+; 	add 1 to count we get from cdr (#occ)
+; case 3 - does not match (recursive call)
+;       return #occ. in cdr
+
+(define (occurs Item L)	
+	(cond	((null? L) 	0)
+		((eq? (car L) Item)
+			(+ 1 (occurs Item (cdr L))))
+		(else 
+			(occurs Item (cdr L))) ))
+
+; all positions in list
+; case 1 - empty: #T 
+; case 3 - car is pos:
+;       return result of recursive call
+; case 2 - car not pos: #F
+(define (all-pos? L)
+	(cond	((null? L) 	 	 #T)
+		((<= (car L)	 0)  	 #F)
+		(else		  (all-pos? (cdr L)))	))
+
+; check for pos
+; case 1 - empty: #F
+; case 2 - car is pos: #T
+; case 3 - car not pos (recursive call)
+;       return result of recursive call
+(define (has-pos? L)
+	(cond	((null? L)	#F)
+	((> (car L)	0)	#T)
+	(else			(has-pos? (cdr L))) ))
+
+; check for capital in state list
+; case 1 - empty: none
+; case 2 - matches 1st state:
+;      return 1st capital
+; case 3 - does not match 1st state:
+; 	lock in cdr
+(define	(capital State SCList)
+	(cond	((null? SCList) 'none)
+	((eq? (caar SCList) State)
+		(cadar SCList))
+	(else
+		(capital State (cdr SCList)))	))
+
+
+

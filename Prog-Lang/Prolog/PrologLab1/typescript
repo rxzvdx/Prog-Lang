@@ -1,0 +1,55 @@
+Script started on 2024-03-26 23:58:09-04:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="80" LINES="41"]
+]0;rosado44@elvix2:~/Prog-Lang/Prolog/PrologLab1[?2004h[rosado44@elvis PrologLab1]$ swipl1l
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- consult(family[18G)[11G[19G.
+[1mtrue.[0m
+
+?- parent(john, emily[22G)[10G[23G.
+[1mtrue [0m[1m.[0m
+
+?- (parent(mike, X[19G)[11G[20G.
+[1;31mERROR: Syntax error: Operator expected
+ERROR: (parent(mike, X)
+ERROR: ** here **
+ERROR:  . 
+[0m?- parent(mike, X[18G)[10G[19G.
+X = jason.
+
+?- sibling(sam, emily[22G)[11G[23G.
+[1mtrue [0m
+Unknown action: g (h for help)
+Action? [1m;[0m
+[1mtrue.[0m
+
+?- and[6G[K?- a[K?- [Kgrandparent(john, jason[27G)[15G[28G.
+[1;31mfalse.[0m
+
+?- sibling(emily, X[20G)[11G[21G.
+X = sam [1m.[0m
+
+?- grandparent(mike, X[23G)[15G[24G.
+[1;31mfalse.[0m
+
+?- sibling(x[12G[KX, Y[16G)[11G[17G.
+X = sam,
+Y = emily [1m.[0m
+
+?- grandparent(X, sam[22G)[15G[23G.
+[1;31mfalse.[0m
+
+?- parent(X, Y[15G)[10G[16G.
+X = john,
+Y = sam [1m.[0m
+
+?- ^D
+[32m% halt
+[0m]0;rosado44@elvix2:~/Prog-Lang/Prolog/PrologLab1[?2004h[rosado44@elvis PrologLab1]$ exit
+[?2004lexit
+
+Script done on 2024-03-27 00:00:48-04:00 [COMMAND_EXIT_CODE="0"]

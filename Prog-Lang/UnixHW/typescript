@@ -1,0 +1,22 @@
+Script started on 2024-01-17 17:59:46-05:00 [TERM="xterm" TTY="/dev/pts/50" COLUMNS="79" LINES="32"]
+]0;rosado44@elvix2:~/UnixHW[?2004h[rosado44@elvis UnixHW]$ pwd
+[?2004l/home/rosado44/UnixHW
+]0;rosado44@elvix2:~/UnixHW[?2004h[rosado44@elvis UnixHW]$ ls -ls
+[?2004ltotal 4
+4 -rw------- 1 rosado44 domain users 263 Jan 17 17:58 about_me.txt
+0 -rw------- 1 rosado44 domain users   0 Jan 17 17:59 typescript
+]0;rosado44@elvix2:~/UnixHW[?2004h[rosado44@elvis UnixHW]$ cat about_me.txt
+[?2004lTony
+He/him
+When everything works.
+When everything doesn't work.
+I love theology and religion.
+11/22/63 by Stephen King.
+I found a mosque in Blackwood that was very beautiful. It was interesting because I had driven past it plenty of times and didn't notice it.
+
+]0;rosado44@elvix2:~/UnixHW[?2004h[rosado44@elvis UnixHW]$ end
+[?2004lbash: end: command not found
+]0;rosado44@elvix2:~/UnixHW[?2004h[rosado44@elvis UnixHW]$ exit
+[?2004lexit
+
+Script done on 2024-01-17 18:00:18-05:00 [COMMAND_EXIT_CODE="127"]

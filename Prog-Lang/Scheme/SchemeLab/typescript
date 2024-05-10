@@ -1,0 +1,29 @@
+Script started on 2024-02-12 20:49:44-05:00 [TERM="xterm" TTY="/dev/pts/114" COLUMNS="158" LINES="42"]
+scheme]0;rosado44@elvix2:~/SchemeLab[?2004h[rosado44@elvis SchemeLab]$ scheme48[K[K[K[K[K[K[K[Kscheme48
+[?2004lWelcome to Scheme 48 1.9.2 (made by root on 2016-08-30)
+See http://s48.org/ for more information.
+Please report bugs to scheme-48-bugs@s48.org.
+Get more information at http://www.s48.org/.
+Type ,? (comma question-mark) for help.
+> ,load schemelabfile
+> (classify 22)
+small
+> (classify 63)
+medium
+> (classify 900)
+big
+> (classify 50)
+medium
+> (classify 100)
+medium
+> (contains_big '(48 102 7))
+#t
+> (contains_big '(-4 0 10 0))
+#f
+> (contains_big '(333 2222    111))
+#t
+> ,exit
+]0;rosado44@elvix2:~/SchemeLab[?2004h[rosado44@elvis SchemeLab]$ exit
+[?2004lexit
+
+Script done on 2024-02-12 20:51:59-05:00 [COMMAND_EXIT_CODE="0"]

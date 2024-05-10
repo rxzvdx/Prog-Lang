@@ -1,0 +1,67 @@
+% Author: Antonio Rosado
+% Program: Best Candidates
+% Purpose: This program compares the opinions of a voter to the opinions of a group of political candidates and finds the candidate who best match the voter's opinions based on their agreement score (by #).
+
+% Base case: empty list = 0
+agreement_score([], [], 0).
+
+% Predicate: agreement_score([V|Vs], [C|Cs], Score)
+% Purpose: Calculates the agreement score between voter and candidate
+% Args:
+%	[V|Vs] - Head and tail of the voter's answer list; V is the current voter's answer, Vs are the remaining answers
+%	[C|Cs] - Head and tail of the candidate's answer list; C is the current candidate's answer, Cs are the remaining answers.
+%	Score - The final calculated agreement score.                                     
+agreement_score([V|Vs], [C|Cs], Score) :-	% Recursive call: computes the score for the remaining answers in the list.		
+	agreement_score(Vs, Cs, RestScore),
+	(V == C -> Increment = 10		% Conditional logic: If the current voter's answer == the candidate's answer, add 10
+	; (V < 3, C < 3) -> Increment = 5	% Else if both answers are less than 3, add 5 to the score.
+	; (V > 2, C > 2) -> Increment = 5	% Else if both answers are greater than 2, add 5 to the score.
+	; Increment = 0),			% Else if none of the above conditions are met, add 0 to the score.
+	Score is RestScore + Increment.		% Calculate total score
+    					                        
+% Predicate: best_candidates(+Voter, +Candidates, -BestMatches)
+% Purpose: Finds the best matches among the candidates based on the highest agreement score.
+% Arguments:
+%       - Voter: List of integers representing the voter's answers.
+%       - Candidates: List of lists, each containing a candidate's name followed by their answers
+%       - BestMatches: List of the names of the candidates with the best agreement score.
+best_candidates(Voter, Candidates, BestMatches) :-
+    findall(Score-Candidate, (member([Candidate|Answers], Candidates), agreement_score(Voter, Answers, Score)), Scores),
+    max_member(MaxScore-_, Scores),                             % Find the max score among all candidates.
+    findall(Name, member(MaxScore-Name, Scores), BestMatches).  % Collect all names that match the max score.
+
+
+% Sample test cases
+test1(L) :- best_candidates(
+        [4, 3, 4, 4, 2, 1, 3, 3, 3, 4],
+        [[adams,    3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+         [grant,    1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+         [ford,     4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+         [hayes,    1, 2, 3, 4, 1, 2, 3, 4, 1, 2],
+         [taft,     2, 3, 2, 3, 2, 3, 2, 3, 2, 3],
+         [polk,     4, 4, 4, 4, 4, 2, 2, 2, 2, 2]], L).
+% [adams, ford] -- typical case; answer includes first name in list
+
+
+test2(L) :- best_candidates(
+        [2, 2, 2, 3, 4, 2, 2, 2, 3, 4],
+        [[taylor,  4, 4, 4, 1, 2, 3, 3, 3, 1, 1],
+         [wilson,  1, 1, 1, 2, 3, 1, 1, 1, 2, 4],
+         [monroe,  3, 3, 3, 3, 3, 3, 3, 3, 3, 3]], L).
+% [wilson] -- typical casel answer in middle of list
+
+
+test3(L) :- best_candidates(
+        [2, 2, 2, 3, 4, 2, 2, 2, 3, 4],
+        [[taylor,  4, 4, 4, 1, 2, 3, 3, 3, 1, 1],
+         [monroe,  3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+         [wilson,  1, 1, 1, 2, 3, 1, 1, 1, 2, 4]], L).
+% [wilson] -- typical case; answer is last name in list
+
+
+test4(L) :- best_candidates(
+        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        [[harding,   4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+         [buchanan,  3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+         [fillmore,  3, 4, 3, 4, 3, 4, 3, 4, 3, 4]], L).
+% [harding, buchanan, filmore] == 3-way tie for 0

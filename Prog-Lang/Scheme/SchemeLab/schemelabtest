@@ -1,0 +1,10 @@
+(define (test1) (classify 22))		; should be small
+(define (test2) (classify 63))		; should be medium
+(define (test3) (classify 900))		; should be big
+(define (test4) (classify 50))		; boundary case: should be medium
+(define (test5) (classify 100))		; boundary case: should be medium
+
+(define (test6) (contains_big '(48 102 7)))	; should be #T
+(define (test7) (contains_big '(-4 10 0)))	; should be #F
+(define (test8) (contains_big '(333 222 111)))	; should be #T
+

@@ -1,0 +1,20 @@
+echo "Testing number_score on 501:"
+echo 501 | ./number_score
+echo "Testing number_score on -12:"
+echo -12 | ./number_score
+echo "Testing number_score on 600:"
+echo 600 | ./number_score
+echo "Testing number_score on 7:"
+echo 7 | ./number_score
+echo "Testing number_score on -9:"
+echo -9 | ./number_score
+echo "Testing harmonic on 3:"
+echo 3 | ./harmonic
+echo "Testing harmonic on 100:"
+echo 100 | ./harmonic
+echo "Testing harmonic on 0:"
+echo 0 | ./harmonic
+echo "Testing harmonic on -15:"
+echo -15 | ./harmonic
+echo "Testing harmonic on 5005:"
+echo 5005 | ./harmonic
